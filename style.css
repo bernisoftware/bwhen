@@ -1,0 +1,14 @@
+:root { --surface:#FAF7F2; --raised:#FFFFFF; --ink:#1B1D22; --muted:#5C6270; --brand:#B9411B; --line:#E6DFD5; }
+@media (prefers-color-scheme: dark) { :root { --surface:#111317; --raised:#1C1F25; --ink:#F2EEE8; --muted:#A3A9B4; --brand:#FF7F50; --line:#2C3039; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--surface); color:var(--ink); font:17px/1.55 -apple-system, "SF Pro Text", Roboto, "Noto Sans", system-ui, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 16px 64px; }
+img.icon { width:96px; height:96px; border-radius:22px; }
+h1 { font-size:34px; line-height:1.2; margin:16px 0 8px; }
+h2 { font-size:22px; margin:40px 0 8px; }
+h3 { font-size:17px; margin:24px 0 4px; }
+p, li { color:var(--ink); }
+.muted { color:var(--muted); }
+a { color:var(--brand); }
+nav { display:flex; gap:16px; flex-wrap:wrap; margin:24px 0; }
+footer { margin-top:56px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
